@@ -10,5 +10,13 @@ public class Main {
             i++;
         }
         System.out.println("While Döngüsü bitti");
+        int j=0;
+        do
+        {
+            System.out.println(j);
+            j+=3;
+        }
+        while (j<10);
+        System.out.println("Do-While Döngüsü bitti");
     }
 }
