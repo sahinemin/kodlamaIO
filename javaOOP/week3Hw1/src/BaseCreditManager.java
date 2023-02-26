@@ -1,8 +1,8 @@
 public abstract class BaseCreditManager implements CreditManager {
 
-    public abstract void Calculate(); // Abstract(Gövdesiz method).
+    public abstract void calculate(); // Abstract(Gövdesiz method).
 
-    public  void Save() {
+    public  void save() {
         System.out.println("Kaydedildi.");
     }
 

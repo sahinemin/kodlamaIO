@@ -1,22 +1,22 @@
 public class CustomerManager {
 
-    private Customer _customer;
-    private CreditManager _creditManager;
+    private final Customer customer;
+    private final CreditManager creditManager;
 
     public CustomerManager(Customer customer,CreditManager creditManager) {
-        _customer = customer;
-        _creditManager=creditManager;
+        this.customer = customer;
+        this.creditManager =creditManager;
     }
 
-    public void Save() {
-        System.out.println("Müşteri kaydedildi: "+ _customer.getId() );
+    public void save() {
+        System.out.println("Müşteri kaydedildi: "+ customer.getId() );
     }
-    public void Delete() {
-        System.out.println("Müşteri silindi: "+ _customer.getId() );
+    public void delete() {
+        System.out.println("Müşteri silindi: "+ customer.getId() );
     }
 
-    public void GiveCredit() {
-        _creditManager.Calculate();
+    public void giveCredit() {
+        creditManager.calculate();
         System.out.println("Kredi verildi.");
     }
 }

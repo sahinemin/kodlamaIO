@@ -1,7 +1,6 @@
 public class TeacherCreditManager extends BaseCreditManager implements CreditManager {
     @Override
-    public  void Calculate() {
+    public  void calculate() {
         System.out.println("Öğretmen kredisi hesapladı.");
-
     }
 }

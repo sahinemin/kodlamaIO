@@ -1,4 +1,4 @@
 public interface CreditManager {
-    void Calculate();
-    void Save();
+    void calculate();
+    void save();
 }

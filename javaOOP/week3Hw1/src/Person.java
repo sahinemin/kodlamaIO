@@ -3,6 +3,13 @@ public class Person extends Customer {
     private String lastName;
     private String nationalIdentity;
 
+    public Person(int id, String city, String firstName, String lastName, String nationalIdentity) {
+        super(id, city);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nationalIdentity = nationalIdentity;
+    }
+
     public String getFirstName() {
         return firstName;
     }

@@ -2,6 +2,11 @@ public class Customer {
     private int id;
     private String city;
 
+    public Customer(int id, String city) {
+        this.id = id;
+        this.city = city;
+    }
+
     public Customer() {
         System.out.println("Müşteri nesnesi başlatıldı.");
     }
